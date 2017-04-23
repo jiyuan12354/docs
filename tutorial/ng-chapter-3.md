@@ -724,7 +724,7 @@ Finally, replace the `LoginComponent`’s existing `login()` function with the c
 login() {
   this.userService.login(this.user)
     .subscribe(
-      () => this.router.navigate(["/list"]),
+      () => this.router.navigate(["list"]),
       (error) => alert("Unfortunately we could not find your account.")
     );
 }
